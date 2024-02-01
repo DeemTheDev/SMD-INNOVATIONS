@@ -40,22 +40,32 @@
 
 -->
 <style>
+  .logo img {
+      width: auto; /* Maintain aspect ratio */
+      max-width: 100%; /* Ensure it doesn't exceed the container */
+      height: auto; /* Automatically adjust height based on width */
+      display: block; /* Remove extra space below the image */
+      margin: 0 auto; /* Center the image horizontally */
+    }
 
+    
 </style>
 <body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
-      <h2 class="logo"><a href="index.html">
-        SMD INNOVATIONS
-      </a></h2>
+      <h2 class="logo">
+        <a href="index.html">
+          <img src="assets/img/SMD INNOVATION.png" alt="logo">
+        </a>
+      </h2>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Blog</a></li>
@@ -120,9 +130,21 @@
               SMD Innovation Technologies is a Level 1 BBBEE Cloud Solutions company helping businesses of all sizes seamlessly transition to the cloud and unlock the full potential of Microsoft Azure and Microsoft 365.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <!--POINT 1-->
+              <li><i class="bi bi-check-circle"></i> 
+                Our experienced team of certified Azure professionals and Microsoft 365 experts are passionate about empowering businesses with cutting-edge cloud technology. 
+              </li>
+              <!--POINT 2-->
+              <li><i class="bi bi-check-circle"></i> 
+                We pride ourselves on our technical expertise, commitment to excellence, and a customer-centric approach that has earned us a reputation as a trusted Azure and Microsoft 365 service provider.
+              </li>
+              <!--POINT 3-->
+              <li><i class="bi bi-check-circle"></i> 
+                We understand that every business has unique needs, and that's why we offer personalized solutions tailored to your specific requirements. 
+              </li>
+              <!--POINT 4-->
+              <li><i class="bi bi-check-circle"></i> 
+                Our experts work closely with you to analyze your current infrastructure, applications, and business objectives, creating a comprehensive migration plan that ensures a smooth and secure transition to the Azure cloud.</li>
             </ul>
             <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a>
           </div>

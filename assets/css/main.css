@@ -1,0 +1,11 @@
+.azure div{
+    border: 1px solid black; /* Add a border to visualize the container */
+    max-width: 139px;
+    height: 100px;
+    
+    
+}
+.azure__img img{
+    width: 100px;
+    height: 100px;
+}

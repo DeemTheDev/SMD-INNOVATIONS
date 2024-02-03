@@ -1,11 +1,223 @@
-.azure div{
-    border: 1px solid black; /* Add a border to visualize the container */
-    max-width: 139px;
-    height: 100px;
-    
-    
+/*BUTNTON PRE SETS*/
+
+
+/* CSS */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+/* CSS */
+.button-85 {
+    margin-top: 1rem;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(112, 51, 224);
+  font-weight: 800;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/*END OF BUTTONS PRESETS*/
+
+.azure__img img{
+    position: relative;
+    top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 }
 .azure__img img{
-    width: 100px;
-    height: 100px;
+    width: 170px;
+    height: auto;
+
 }
+.azure__content {
+    text-align: center;
+}
+.azure__content h3{
+    font-weight: 800;
+}
+.azure__content p{
+    font-weight: 600;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+/*SERVICES SVGS*/
+.icon-box{
+    width: 100%;
+}
+.view-more a{
+    color: black;
+    font-weight: 600;
+}
+/*SVG HOVER*/
+.icon {
+    position: relative;
+    width: 100px; /* Set the width as needed */
+    height: 100px; /* Set the height as needed */
+    overflow: hidden; /* Hide overflow to prevent clipping during animation */
+    transition: transform 6s; /* Add a smooth transition effect */
+  }
+
+  .icon object {
+    width: 100%;
+    height: 100%;
+  }
+
+  .icon:hover object {
+    transform: scale(1.2); /* Zoom in on hover (adjust the scale factor as needed) */
+  }
+
+/*SVG POP UP*/
+.content {
+    padding: 20px;
+  }
+  
+  
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /*view more button*/
+  .view-more {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease; /* Transition for opacity over 1 second with ease-in-out timing function */
+  }
+  
+  .view-more.show {
+    display: block;
+    opacity: 1;
+  }
+  
+.hidden {
+    display: none;
+  }

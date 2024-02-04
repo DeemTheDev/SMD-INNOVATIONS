@@ -233,3 +233,17 @@
   .swiper-slide img{
     width: 100%;
   }
+
+  /*CODE OF CONDUCT*/
+  .coc{
+    width: 100%;
+    height: 90vh;
+    margin-top: 20vh;
+  }
+  .coc-nav{
+    background: rgba(24, 6, 185, 0.8);
+  }
+.coc-footer{
+  position: relative;
+  margin-top: 175vh;
+}
